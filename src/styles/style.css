@@ -1,0 +1,163 @@
+.footerList li {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.btn {
+  @apply px-6 py-[5px] rounded-sm text-[12px] font-semibold bg-[#00715D] flex items-center;
+}
+
+.titleWrap {
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.searchBox {
+  background: #00715d !important;
+  color: #fff;
+  border-radius: 7px;
+}
+.donationField {
+  width: 430px !important;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.sectionMargin {
+  margin-top: 80px;
+}
+
+.addDonationWraps {
+  background: #ddd;
+  padding: 30px 0;
+}
+.addDonationWrap {
+  padding: 50px;
+  width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 10px;
+}
+.donationsTextArea {
+  height: 300px !important;
+}
+.donationFields {
+  margin: 5px !important;
+}
+
+.savebtn button {
+  background-color: #37a248;
+  padding: 8px;
+  margin-right: 5px;
+  color: #fff;
+  border-radius: 3px;
+}
+.completedServiceCards {
+  width: 100%;
+  padding: 50px 20px;
+}
+.logoutBtn {
+  color: black !important;
+}
+
+.donorText {
+  transition: all 0.5s ease-in-out;
+}
+
+.donorCard:hover .donorText {
+  color: #00715d;
+}
+.donateInput {
+  width: 80px;
+  border: 1px solid #ddd;
+  height: 40px;
+  padding-left: 5px;
+}
+.donateInput:focus {
+  outline: none;
+}
+
+.btn2 {
+  rotate: 270deg;
+  width: 100px;
+  position: relative;
+  background: #00715d;
+  height: 33px;
+}
+
+.allDonationContainers {
+  height: 250px !important;
+  background-image: url(../assets/images/detail2.jpg) !important ;
+  background-size: cover;
+}
+.allDonationContainers::after {
+  background: black !important;
+  opacity: 0.9;
+}
+.line2 {
+  width: 2px;
+  height: 50px;
+  background: red;
+}
+.volunteersImgWrap {
+  width: 370px;
+  height: 280px;
+  overflow: hidden;
+}
+.volunteersImgWrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  scale: 1;
+  transition: all 0.5s cubic-bezier(0.48, 0.45, 0.65, 0.64);
+}
+.volunteersImgWrap:hover img {
+  scale: 1.1;
+  cursor: pointer;
+}
+.volunteerContents2 {
+  left: 20% !important;
+}
+
+.scrollToTopBtn {
+	width: 40px;
+	height: 40px;
+	background: #00715D;
+	color: white;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	z-index: 9999 !important;
+	border-radius: 100%;
+	display: grid;
+	place-items: center;
+	transition: all .5s ease;
+	animation-delay: .5s;
+}
+
+
+@media only screen and (max-width: 1400px) {
+  .completedServiceCards {
+    width: 290px;
+    padding: 40px 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .titleWrap {
+    width: 100%;
+  }
+  .hiddenNavBar {
+    display: none;
+  }
+  .addDonationWrap {
+   width:100%;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .swiperWrap {
+   width: 100% !important;
+  }
+}

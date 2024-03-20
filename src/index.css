@@ -1,0 +1,136 @@
+@import url(./styles/style.css);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+@layer components {
+}
+
+@layer base {
+  h1 {
+    @apply text-2xl font-semibold sm:text-5xl;
+  }
+  h2 {
+    @apply text-2xl font-semibold sm:text-4xl;
+  }
+  h3 {
+    @apply text-3xl font-bold;
+  }
+}
+
+.drawerflex {
+  width: 100% !important;
+  display: flex;
+  justify-content: space-between;
+}
+.drawwerLeftSide,
+.activeSideBar {
+  width: 20% !important;
+  transition: all 0.5s cubic-bezier(0.55, 0.54, 0.68, 0.63);
+}
+.sideBarActive {
+  width: 0% !important;
+  transition: all 0.5s cubic-bezier(0.55, 0.54, 0.68, 0.63);
+}
+.drawer-content {
+  position: absolute !important;
+  right: 0px !important;
+  width: 80%;
+  transition: all 0.5s cubic-bezier(0.55, 0.54, 0.68, 0.63);
+}
+.activeDrawer {
+  width: 90%;
+  position: absolute !important;
+  right: 31px !important;
+  transition: all 0.5s cubic-bezier(0.55, 0.54, 0.68, 0.63);
+}
+.menu :where(li:not(.menu-title) > *:not(ul):not(details):not(.menu-title)),
+.menu :where(li:not(.menu-title) > details > summary:not(.menu-title)) {
+  padding-left: 0rem !important;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0rem !important;
+}
+
+.css-15v22id-MuiAccordionDetails-root {
+  padding: 0px 0px 0px !important;
+  padding-bottom: 0px !important;
+}
+.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
+  min-height: 38px !important;
+}
+
+.css-o4b71y-MuiAccordionSummary-content.Mui-expanded,
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root.Mui-expanded {
+  margin: 0px !important;
+}
+table {
+  width: 100%;
+}
+.table :where(thead, tfoot) {
+  white-space: pre-wrap;
+  font-size: 0.7rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+  color: hsl(var(--bc) / 0.6);
+}
+
+.table :where(th, td) {
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  vertical-align: middle;
+  white-space: pre-wrap;
+}
+.table :where(td) {
+  border-right: 1px solid #ddd;
+  text-align: center;
+  font-size: 12px;
+}
+.table :where(td):nth-last-of-type() {
+  border-bottom: 3px solid #ddd !important;
+}
+.table :where(th) {
+  border: 1px solid #fff;
+  text-align: center;
+  background: #42a1da;
+  font-size: 14px;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+.table tr:hover {
+  background: #11e43438;
+}
+.table {
+  width: 100%;
+  text-align: left;
+  font-size: 0.6em;
+  line-height: 1.75rem;
+  border-radius: var(--rounded-box, 1rem);
+}
+textarea {
+  padding: 10px;
+}
+
+@media only screen and  (max-width:768px){
+  .barChart{
+      display:none;
+  }
+}

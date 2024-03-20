@@ -1,0 +1,161 @@
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  background: white !important;
+}
+.activeToggle .bar:nth-child(2) {
+  opacity: 0;
+}
+.activeToggle .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  -webkit-transform: translateY(8px) rotate(45deg);
+  -moz-transform: translateY(8px) rotate(45deg);
+  -ms-transform: translateY(8px) rotate(45deg);
+  -o-transform: translateY(8px) rotate(45deg);
+}
+.activeToggle .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+  -moz-transform: translateY(-8px) rotate(-45deg);
+  -ms-transform: translateY(-8px) rotate(-45deg);
+  -o-transform: translateY(-8px) rotate(-45deg);
+}
+.navActive,
+.activeToggle {
+  position: fixed;
+  background: #2c3136;
+  left: 3px;
+  padding: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 50px;
+  transition: all 0.5s cubic-bezier(0.55, 0.54, 0.68, 0.63);
+  cursor: pointer;
+}
+.navActive {
+  left: 24px;
+  z-index: 999999 !important;
+}
+
+.activeToggle {
+  position: fixed;
+  left: 203px;
+  transition: all 0.5s cubic-bezier(0.55, 0.54, 0.68, 0.63);
+}
+.activeRightSideBarWrap {
+  width: 89px;
+  background: #2c3136;
+  height: 100% !important;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  transition: all 0.5s cubic-bezier(0.55, 0.54, 0.68, 0.63);
+}
+.rightSideBarWrap {
+  display: none;
+  transition: all 0.5s cubic-bezier(0.55, 0.54, 0.68, 0.63);
+}
+.toolTipWrap {
+  position: relative;
+}
+.toolTip {
+  position: absolute;
+  left: 57px;
+  z-index: 999999999 !important;
+  background: #2c3136;
+  width: 119px;
+  border-radius: 3px;
+  color: #fff;
+  top: 4px;
+  padding: 5px;
+  display: none;
+}
+.toolTipWrap:hover .toolTip {
+  display: block;
+}
+.tooltipIcon {
+  font-size: 25px !important;
+  color: #fff !important;
+  cursor: pointer;
+}
+.dashboardAccordion {
+  background: #2c3136 !important;
+  width: 250px !important;
+  color: #fff !important;
+  transition: all 500s ease-in-out;
+}
+.dashboardAccordion:hover {
+  background: #fff !important;
+  color: black !important;
+}
+.accordionTypoGrapy {
+  padding-left: 35px;
+  padding-bottom: 6px !important;
+  font-size: 14px !important;
+}
+.dashboardIcon {
+  margin-right: 5px;
+  font-size: 20px !important;
+}
+.dashboardItems {
+  padding-left: 16px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  transition: all 0.5s ease-in-out;
+  font-size: 14px;
+}
+.dashboardItems:hover {
+  background: #fff;
+  padding: 5px;
+  padding-left: 20px;
+  width: 100%;
+  color: black !important;
+}
+.active {
+  position: relative;
+  z-index: 999;
+}
+
+.accordionExpandIcon {
+  color: #fff !important;
+  transition: all 0.5s ease-in-out;
+}
+.dashboardAccordion:hover .accordionExpandIcon {
+  color: black !important;
+}
+
+@media only screen and (max-width: 1024px) {
+  .activeToggle {
+    left: 204px;
+  }
+
+  .activeRightSideBarWrap {
+    width: 60px;
+  }
+  .navActive {
+    left: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .activeRightSideBarWrap {
+    display: none;
+  }
+  .activeToggle {
+    left: 169px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .drawwerLeftSide,
+  .activeSideBar {
+    width: 46% !important;
+  }
+}

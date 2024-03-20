@@ -1,0 +1,78 @@
+.donationCard {
+    width: 310px;
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    overflow: hidden;
+    transition:all .5s ease-in-out;
+    
+  }
+  .donationCard:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .conationContent{
+    padding: 16px 2px;
+    font-size: 14px;
+  }
+  .conationContent h3{
+    font-size:18px;
+    font-weight: 500;
+  }
+  .imgWrap {
+    height: 250px;
+    overflow: hidden;
+  }
+  .imgWrap img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+  }
+  
+  .donationImg {
+    transform: scale(1);
+    transition: 0.5s ease-in-out;
+  }
+  .donationImg:hover {
+    transform: scale(1.2);
+  }
+
+  .donationsCard2:nth-child(9), .donationsCard2:nth-child(10),.donationsCard2:nth-child(10), .donationsCard2:nth-child(11), .donationsCard2:nth-child(11), .donationsCard2:nth-child(12), .donationsCard2:nth-child(13), .donationsCard2:nth-child(14), .donationsCard2:nth-child(15), .donationsCard2:nth-child(16), .donationsCard2:nth-child(17), .donationsCard2:nth-child(18){
+    display: none;
+  }
+  
+@media only screen and (max-width: 1024px) {
+    .bannerWrap {
+      height: 394px;
+  }
+    .heroBoxMain {
+      width: 95%;
+    }
+    .registrationCard {
+      width: 320px;
+    }
+    .donationCard {
+      max-width: 240px;
+    }
+  
+    .imgWrap {
+      width: 312px;
+      height: 247px;
+    }
+    .hajjBtn {
+      margin-left: 33px;
+      margin-top: 18px;
+    }
+    .bannerWrap h2 {
+      font-size: 30px;
+      width: 65%;
+      margin: 0 auto;
+      padding-top: 29px;
+      text-align: center;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+   .donationCard{
+    max-width:100%;
+   }
+  }

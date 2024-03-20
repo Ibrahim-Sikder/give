@@ -1,0 +1,99 @@
+.donorsReviews {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1100px;
+}
+.animation {
+  width: 100%;
+}
+
+.arrowWrap {
+  display: flex;
+  margin-left: 85px;
+  margin-top: 20px;
+  cursor: pointer;
+  z-index: 99;
+  position: relative;
+}
+.topServiceContent,
+.donorsReviewRights {
+  width: 50%;
+}
+
+.donorReviewsLefts {
+  width: 500px;
+}
+.leftArrow {
+  width: 50px;
+  height: 35px;
+  background: #00715d;
+  display: grid;
+  place-items: center;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-right: 1px solid #fff;
+}
+.rightArrow {
+  width: 50px;
+  height: 35px;
+  background: #00715d;
+  display: grid;
+  place-items: center;
+  border-top-right-radius: 17px;
+  border-bottom-right-radius: 17px;
+}
+.leftArrowIcon {
+  transform: rotate(225deg);
+  color: white;
+}
+.rightArrowIcon {
+  transform: rotate(49deg);
+  color: white;
+}
+.donorReviewHead h2 {
+  border-bottom: 3px solid #00715d;
+  width: 270px;
+  padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .topServicesWrap {
+    margin-bottom: 86px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .donorReviewHead h2 {
+    width: 100%;
+  }
+  .donorReviewsLefts {
+    width: 100%;
+  }
+  .donorsReviews {
+    flex-direction: column;
+  }
+  .topServiceContent,
+  .donorsReviewRights {
+    width: 100%;
+  }
+  .arrowWrap {
+    margin-top: 38px;
+  }
+  .arrowWrap {
+    display: flex;
+    margin-left: 22px;
+    margin-top: 27px;
+    cursor: pointer;
+    z-index: 99;
+    position: relative;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .arrowWrap {
+    margin-left: 22px;
+    margin-top: 27px;
+  }
+  .topServicesWrap {
+    margin-bottom: 45px;
+  }
+}
